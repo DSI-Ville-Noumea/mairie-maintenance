@@ -1,0 +1,135 @@
+<title>Site Maintenance</title>
+<meta charset="UTF-8">
+<style>
+    h1 { font-size: 50px; }
+    article { display: block; text-align: center; width: 750px; margin: 0 auto; padding-top: 200px}
+    a { color: #dc8100; text-decoration: none; }
+    a:hover { color: #fff; text-decoration: none; }
+    .site-title {
+        text-align: center;
+        text-shadow: 0 0 1px #444444;
+        font-size: 50px;
+        word-spacing: 10px;
+    }
+    body {
+        color: #fff;
+        font-family: Signika Negative Light;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 300;
+        background: url("imgs/background.jpg") no-repeat fixed center; background-size: cover;
+    }
+    @font-face { font-family: Signika Negative Light; font-style: normal; font-weight: 300; src: url('font/SignikaNegative-Light.ttf'); }
+    .social-icons {
+        max-width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .clearfix {
+        display: block;
+    }
+    .social-icons ul {
+        margin: 0;
+    }
+    .social-icons ul li {
+        display: inline;
+        margin: 0 4px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .popup {
+        margin: 300px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 30%;
+        position: relative;
+        transition: all 5s ease-in-out;
+    }
+
+    .popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    .popup .close:hover {
+        color: #06D85F;
+    }
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+        color: black;
+        text-align: center;
+    }
+
+    #footer {
+        background: rgba( 0, 0, 0, 0.6);
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+</style>
+
+<section>
+    <article>
+
+        <h1 class="site-title">EN COURS DE MAINTENANCE</h1>
+        <div style="text-align: center">
+            <p>L'application sera de nouveau disponible très bientôt.</br>
+                Veuillez nous excuser pour la gène occasionnée.</br></p>
+        </div>
+        <div class="social-icons clearfix">
+            <ul>
+                <li>
+                    <a href="https://easyvista.ville-noumea.nc" title="EasyVista"><img src="imgs/ev.png"/></i></a>
+                </li>
+                <li>
+                    <a href="#popup_hotline" title="Hotline : 6189"><img src="imgs/hotline.png"/></i></a>
+                </li>
+            </ul>
+        </div>
+    </article>
+</section>
+<section id="footer">
+    <div class="copyright">Copyright © <a href="http://portail.site-mairie.noumea.nc/Pages/Index.aspx">Mairie de Nouméa</a></div>
+</section>
+
+
+<div id="popup_hotline" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            Pour contacter la hotline : 6189.
+        </div>
+    </div>
+</div>
